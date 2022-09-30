@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <img id="city"  style="width:1800px" src="gax.jpg">
+    <img id="saturn"  style="width:1000xpx" src="saturn.360.jpg">
+    <img id="saturnTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orig13.deviantart.net/b322/f/2014/306/2/4/saturn_texture__3_2k____storm_by_hellcatf6f-d84xlbn.png" crossorigin="anonymous" />
+    <img id="marsTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://solarviews.com/raw/venus/venmap.gif" crossorigin="anonymous" />
+    <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/b9a986a8f99e18c42965242ca4374d9e/original.png" crossorigin="anonymous" />  <img id="uranusTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://csdrive.srru.ac.th/55122420113/texture/neptune.png" crossorigin="anonymous" />
+    <img  id="saturnRings" src="113967main_PIA05421-329.jpg" >  
+    <img id="plutoTexture" src="plutotext.png">  
+    <img id="jupiterTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orsa.sourceforge.net/textures/jupiter-1k.png" crossorigin="anonymous" />
+    <!--sruthi's additions-->
+    <img id="jupiterTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orsa.sourceforge.net/textures/jupiter-1k.png" crossorigin="anonymous" />
+    <img id="neptuneTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orsa.sourceforge.net/textures/neptune-1k.png" crossorigin="anonymous" />
+    <img id="earthTexture" src="https://img.gs/bbdkhfbzkk/stretch/http://orsa.sourceforge.net/textures/earth-1k.png" crossorigin="anonymous" />
+    <img id = "mercuryTexture" src = "mercury.png">
+    <img id = "venusTexture" src = "venus.png">
+  </head>
+  <body>
+    <a-scene>
+    <a-sky id="image-360"  src="#city"></a-sky>
+    <a-sphere position="-200 0.5 -5" radius="75.25" src="sun.png">
+      <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation>
+    </a-sphere>
+    <a-sphere position="-50 0.5 5" radius="1.25"  src="mercury.png" color = "#808080">
+      <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation>
+    </a-sphere>
+    <a-sphere position="-30 0.5 -5" radius="2.25"  src="venus.png" color = "#FFFFF6">
+      <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation>
+    </a-sphere>
+   <!--edited pluto location-->
+   <a-sphere src="pluttext.png" position="12.23 0.75 -5" radius="0.25"   > 
+      <a-animation attribute="rotation"   to="0 360 0" repeat="indefinite"></a-animation>
+    </a-sphere>
+      <a-sphere position="0 0.5 -7" radius="2.25"   src="#saturnTexture">
+        <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation>
+      </a-sphere>
+      <a-sphere position="-13 0.5 -5" radius="0.35" color="#f5f5dc"src="#marsTexture">
+        <a-animation attribute="rotation" to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+        <a-sphere position="-16 0.5 -5" radius="0.75" color="#f5f5dc"src="#earthTexture">
+          <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+        <a-sphere position="-8 0.5 -8" radius="3" color="#f5f5dc"src="#jupiterTexture">
+          <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+        <a-sphere position="9.23 0.6 -5" radius="0.75" color="#f5f5dc"src="#neptuneTexture">
+          <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+      
+      <a-sphere position="6 0.5 -5" radius="0.75" color="#f5f5dc"src="#uranusTexture">
+        <a-animation attribute="rotation"  to="0 360 0" repeat="indefinite"></a-animation></a-sphere>
+        <a-torus  src="#saturnRings"  arc="360" radius="3.2" rotation="65.3 -81.8 -81.8"radius-tubular="0.03" position="0 0.5 -7"></a-torus>
+
+<a-torus src="#saturnRings" class="clickable" radius="4" arc="360"  radius-tubular="0.03"rotation="65.3 -81.8 81.8" position="0 0.5 -7" attribute="rotation" dur="2500" easing="linear" to="0 360 0" repeat="indefinite"></a-torus>
+<a-torus src="#saturnRings" class="clickable" radius="2.7" arc="360"  radius-tubular="0.03"rotation="65.3 -81.8 81.8" position="0 0.5 -7" attribute="rotation" dur="2500" easing="linear" to="0 360 0" repeat="indefinite"></a-torus>
+<a-torus src="#saturnRings" class="clickable" radius="2.9" arc="360"  radius-tubular="0.03"rotation="65.3 -81.8 81.8" position="0 0.5 -7" attribute="rotation" dur="2500" easing="linear" to="0 360 0" repeat="indefinite"></a-torus>
+<a-torus src="#saturnRings" class="clickable" radius="3.5" arc="360"  radius-tubular="0.03"rotation="65.3 -81.8 81.8" position="0 0.5 -7" attribute="rotation" dur="2500" easing="linear" to="0 360 0" repeat="indefinite"></a-torus>
+
+    
+    </a-scene>
+  </body>
+</html>
